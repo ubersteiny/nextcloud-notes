@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
@@ -15,12 +16,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Calendar;
 import java.util.Objects;
 
-import it.niedermann.android.markdown.MarkdownUtil;
 import it.niedermann.owncloud.notes.LockedActivity;
 import it.niedermann.owncloud.notes.R;
 import it.niedermann.owncloud.notes.accountpicker.AccountPickerListener;
@@ -98,7 +96,10 @@ public class EditNoteActivity extends LockedActivity implements BaseNoteFragment
             launchExistingNote(getAccountId(), noteId);
         } else {
             if (Intent.ACTION_VIEW.equals(getIntent().getAction())) {
-                launchReadonlyNote();
+                new AlertDialog.Builder(this)
+                        .setTitle("Debug Information")
+                        .setMessage("Intent Action: " + getIntent().getAction()).show();
+//                launchReadonlyNote();
             } else {
                 launchNewNote();
             }
