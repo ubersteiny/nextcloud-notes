@@ -118,6 +118,9 @@
     <string name="error_dialog_tip_files_force_stop">您的Nextcloud應用程式似乎出了點問題。 請嘗試同時強行關閉 Nextcloud 應用程序和 Nextcloud Notes 應用程序。</string>
     <string name="error_dialog_tip_files_delete_storage">如果強行關閉沒有幫助，則可以嘗試清除兩個應用程序的存儲。</string>
     <string name="error_dialog_timeout_instance">伺服器沒有在規定的時間回應。請確保您的伺服器實例在正常運行。</string>
+    <string name="error_dialog_check_server_logs">您的Nextcloud設置存在問題。 請查看伺服器記錄檔案。</string>
+    <string name="error_dialog_check_maintenance">請檢查您的 Nextcloud 當前是否在維護模式。</string>
+    <string name="error_dialog_insufficient_storage">您的 Nextcloud 沒有剩餘可用的存儲空間。請刪除一些檔案，以將近端更改同步到雲中。</string>
     <string name="error_dialog_we_need_info">我們需要以下的技術資訊來幫助您：</string>
     <string name="added_content">已加入「%1$s」</string>
     <string name="shared_text_empty">分享的文字是空的</string>
